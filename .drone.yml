@@ -1,10 +1,10 @@
 pipeline:
-  docker-drone-client:
+  docker-drone-start-build:
     context: .
     dockerfile: ./Dockerfile
     image: plugins/docker:1.12
     registry: registry.eorlbruder.de
-    repo: registry.eorlbruder.de/drone-client
+    repo: registry.eorlbruder.de/drone-start-build
     secrets:
     - docker_username
     - docker_password
